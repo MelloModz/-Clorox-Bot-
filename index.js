@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const fs = require("fs");
+const ms = require("ms");
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 
@@ -21,7 +22,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity(`Coding Central`, {type: "STREAMING"});
+  bot.user.setActivity(`PornHub`, {type: "STREAMING"});
 
 });
 
